@@ -22,7 +22,7 @@ export function Footer() {
     <footer className="bg-[#0C0C0C] text-white">
       <div className="mx-auto max-w-7xl px-6 py-8">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-          <div className="col-span-2 md:col-span-1">
+          <div className="col-span-2 md:col-span-1 pl-8">
             <Link href="/" className="flex items-center">
               <span className="text-lg text-white tracking-tight">
                 <span className="font-anton">NoDesk AI</span>

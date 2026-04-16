@@ -13,7 +13,7 @@ export default function PortfolioPage() {
         className="mb-12"
       >
         <h1 className="text-4xl font-bold text-text-primary">
-          产品设计作品
+          产品设计作品集
         </h1>
         <p className="mt-3 text-base text-text-secondary leading-relaxed max-w-2xl">
           探索 <span className="font-anton">NoDesk AI</span> 设计团队的代表性项目，从策略到执行，每一个作品都承载着我们对卓越体验的追求。

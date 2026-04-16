@@ -191,7 +191,7 @@ export default function GoalsPage() {
       >
         <div className="flex items-baseline justify-between mb-10 border-b border-border pb-4">
           <h2 className="text-2xl font-bold text-text-primary">
-            目标与原则的关系
+            目标与原则
           </h2>
         </div>
 
@@ -206,9 +206,6 @@ export default function GoalsPage() {
             </p>
           </div>
           <div>
-            <p className="text-xs font-mono tracking-widest text-text-tertiary uppercase mb-3">
-              Design Principles
-            </p>
             <h3 className="text-lg font-bold text-text-primary mb-3">
               设计原则
             </h3>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import type { Project } from "@/lib/data";
@@ -22,17 +23,38 @@ export function ProjectCard({
         href={`/portfolio/${project.slug}`}
         className="group block overflow-hidden rounded-2xl border border-border-light bg-white hover:shadow-lg transition-all duration-300"
       >
-        <div className="aspect-[16/10] bg-surface-alt p-8 flex items-end">
-          <div className="w-full">
-            <span className="inline-block px-3 py-1 bg-foreground/10 rounded-full text-xs font-medium text-text-secondary mb-3">
-              {project.category}
-            </span>
-            <h3 className="text-2xl font-bold text-text-primary group-hover:translate-x-1 transition-transform duration-300">
-              {project.title}
-            </h3>
+        {project.gallery && project.gallery.length > 1 ? (
+          <div className="aspect-[16/9] overflow-hidden bg-white flex items-center justify-center gap-2 px-4">
+            {project.gallery.map((src, i) => (
+              <div key={src} className="relative flex-1 h-full">
+                <Image
+                  src={src}
+                  alt={`${project.title} ${i + 1}`}
+                  fill
+                  unoptimized
+                  className="object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                />
+              </div>
+            ))}
           </div>
-        </div>
+        ) : project.coverImage ? (
+          <div className="aspect-[16/9] overflow-hidden">
+            <Image
+              src={project.coverImage}
+              alt={`${project.title} 封面`}
+              width={320}
+              height={200}
+              className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 320px"
+            />
+          </div>
+        ) : (
+          <div className="aspect-[16/9] bg-surface-alt" />
+        )}
         <div className="p-6">
+          <h3 className="text-xl font-bold text-text-primary mb-2">
+            {project.title}
+          </h3>
           <p className="text-sm text-text-secondary leading-relaxed">
             {project.description}
           </p>

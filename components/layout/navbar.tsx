@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { ArrowLeft, Menu, X } from "lucide-react";
 
 const navItems = [
   { href: "/goals", label: "设计目标" },
@@ -19,6 +19,13 @@ export function Navbar() {
   const [showLinks, setShowLinks] = useState(pathname !== "/");
 
   const isHome = pathname === "/";
+
+  const parentPath = (() => {
+    if (pathname === "/") return null;
+    const segments = pathname.split("/").filter(Boolean);
+    if (segments.length > 1) return "/" + segments.slice(0, -1).join("/");
+    return "/";
+  })();
 
   useEffect(() => {
     if (!isHome) {
@@ -48,12 +55,25 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-border-light">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-        <Link href="/" className="flex items-center group">
-          <span className="text-lg text-text-primary tracking-tight transition-colors duration-300 group-hover:text-[#FFCB00]">
-            <span className="font-anton">NoDesk AI</span>
-            <span className="font-sans font-bold text-text-secondary group-hover:text-[#FFCB00] transition-colors duration-300">.design</span>
-          </span>
-        </Link>
+        <div className="flex items-center">
+          <div className="w-9 -ml-1 shrink-0">
+            {parentPath && (
+              <Link
+                href={parentPath}
+                className="flex items-center justify-center w-8 h-8 rounded-full text-text-tertiary hover:text-text-primary hover:bg-surface-hover transition-colors"
+                aria-label="返回上一级"
+              >
+                <ArrowLeft size={18} />
+              </Link>
+            )}
+          </div>
+          <Link href="/" className="flex items-center group">
+            <span className="text-lg text-text-primary tracking-tight transition-colors duration-300 group-hover:text-[#FFCB00]">
+              <span className="font-anton">NoDesk AI</span>
+              <span className="font-sans font-bold text-text-secondary group-hover:text-[#FFCB00] transition-colors duration-300">.design</span>
+            </span>
+          </Link>
+        </div>
 
         <AnimatePresence>
           {showLinks && (

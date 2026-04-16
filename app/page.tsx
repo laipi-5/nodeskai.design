@@ -16,10 +16,10 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent-cyan/3 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-6">
-          <div className="flex flex-col-reverse md:flex-row md:items-center md:gap-12 lg:gap-20">
+        <div className="relative mx-auto max-w-5xl px-6">
+          <div className="flex flex-col-reverse md:flex-row md:items-center md:gap-6 lg:gap-10">
             {/* Signpost Navigation */}
-            <div className="md:flex-shrink-0 origin-center scale-150 mt-12 md:ml-16">
+            <div className="md:flex-shrink-0 origin-center scale-150 mt-12 md:ml-8">
               <Signpost />
             </div>
 
@@ -31,13 +31,9 @@ export default function Home() {
               className="text-center md:text-right mb-12 md:mb-0 md:flex-1"
             >
               <p className="text-base md:text-lg text-text-secondary leading-relaxed">
-                设计不是装饰，是秩序；设计的目的是解决问题。
-                <br className="hidden sm:block" />
-                这里是 <span className="font-anton text-text-primary">NoDesk AI</span> 设计团队的开放工作台——
-                <br className="hidden sm:block" />
-                我们将设计原则、组件规范与产品实践集成在一起，
-                <br className="hidden sm:block" />
-                让每一步探索都有迹可循。
+                <span className="sm:block">设计不是装饰，是秩序；设计的目的是解决问题。</span>
+                <span className="sm:block">这里是 <span className="font-anton text-text-primary">NoDesk AI</span> 设计团队的开放工作台——</span>
+                <span className="sm:block">我们将设计原则、组件规范与产品实践集成在一起，让每一步探索都有迹可循。</span>
               </p>
             </motion.div>
           </div>

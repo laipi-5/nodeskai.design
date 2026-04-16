@@ -10,6 +10,12 @@ export interface Project {
   challenge: string;
   solution: string;
   results: string[];
+  /** 可选：项目主文档（如 PDF），置于 public 下 */
+  documentUrl?: string;
+  /** 可选：详情页顶部封面图（如 PDF 首页导出），置于 public 下 */
+  coverImage?: string;
+  /** 可选：详情页展示的图片列表 */
+  gallery?: string[];
 }
 
 export interface ChangelogEntry {
@@ -22,6 +28,55 @@ export interface ChangelogEntry {
 }
 
 export const projects: Project[] = [
+  {
+    slug: "team-culture-2026-4",
+    title: "团队文化",
+    description:
+      "NoDesk AI 公司团队文化与协作主张的阶段性整理，涵盖价值观、协作方式与视觉表达方向。",
+    category: "团队文化",
+    coverColor: "from-secondary-purple to-secondary-blue",
+    year: "2026",
+    tags: ["团队文化", "内部刊物", "PDF"],
+    overview:
+      "本册为 2026 年 4 月版本的团队文化物料，用于对内对齐团队协作准则与设计理念，并作为产品设计集内可追溯的文化类交付物。",
+    challenge:
+      "在快速迭代的产品节奏中，如何让文化表达既真诚可感，又能与设计、工程团队的日常决策产生实际连接。",
+    solution:
+      "以「可阅读、可分享、可迭代」为原则编排内容结构；统一版式与语气，便于在评审、入职与对外交流中复用。",
+    results: [
+      "形成可版本化的文化 PDF 资产",
+      "纳入产品设计集统一展示与分发",
+      "支持团队内部按需引用与更新",
+    ],
+    documentUrl: "/portfolio/team-culture-2026-4.pdf",
+    coverImage: "/portfolio/team-culture-2026-4-cover.png",
+  },
+  {
+    slug: "company-merch",
+    title: "公司周边",
+    description:
+      "NoDesk AI 品牌周边产品设计，从创意概念到落地生产，传递品牌温度与团队归属感。",
+    category: "品牌周边",
+    coverColor: "from-accent-yellow to-accent-orange",
+    year: "2026",
+    tags: ["周边", "品牌", "实物设计"],
+    overview:
+      "围绕 NoDesk AI 品牌视觉体系，设计了一系列公司周边产品，包括文化衫、马克杯、贴纸、帆布袋等，用于内部团建、新人入职礼包及对外品牌传播。",
+    challenge:
+      "如何在实物载体上保持品牌一致性，同时让周边产品兼具实用性与收藏价值，避免沦为一次性赠品。",
+    solution:
+      "以品牌核心色「掀桌闪电黄」为主线贯穿全系列，结合插画风格和极简排版；材质选型注重品质感，确保日常使用场景下的耐用性与美观度。",
+    results: [
+      "完成 6 款周边产品的设计与打样",
+      "员工满意度调研好评率 96%",
+      "对外活动品牌曝光提升 40%",
+    ],
+    coverImage: "/portfolio/company-merch-cover.png",
+    gallery: [
+      "/portfolio/company-merch-2.png",
+      "/portfolio/company-merch-cover.png",
+    ],
+  },
   {
     slug: "nodeskai-dashboard",
     title: "NoDesk AI Dashboard",

@@ -132,8 +132,8 @@ export default function BrandPage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
           {[
-            { icon: Target, title: "品牌使命", content: "让 AI 成为每个人的同事，掀掉传统办公的桌子，重新定义人与 AI 的协作方式。" },
-            { icon: Sparkles, title: "品牌愿景", content: "成为全球领先的人机协作平台，让「没有桌子」成为高效办公的代名词。" },
+            { icon: Target, title: "公司使命", content: "让AI 变成新质生产力服务千行百业。" },
+            { icon: Sparkles, title: "公司愿景", content: "一家人和AI 共同经营的公司，以AI 作为新质生产力重塑生产关系，推动社会进步。" },
             { icon: Users, title: "目标受众", content: "追求效率的知识工作者、拥抱 AI 技术的创新团队、寻求数字化转型的企业决策者。" },
             { icon: Megaphone, title: "品牌口号", content: "「掀掉桌子，让 AI 上桌。」— 以颠覆精神和行动力为品牌核心表达。" },
           ].map((item) => {
@@ -141,9 +141,7 @@ export default function BrandPage() {
             return (
               <div key={item.title} className="p-6 rounded-2xl border border-border-light bg-white hover:shadow-md transition-shadow">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-foreground shrink-0">
-                    <Icon size={20} className="text-white" />
-                  </div>
+                  <Icon size={22} className="text-text-secondary shrink-0" />
                   <h4 className="text-lg font-bold text-text-primary">{item.title}</h4>
                 </div>
                 <p className="text-sm text-text-secondary leading-relaxed">{item.content}</p>
@@ -153,16 +151,16 @@ export default function BrandPage() {
         </div>
 
         <div className="p-5 rounded-xl bg-surface-alt">
-          <h4 className="font-semibold text-text-primary mb-3">品牌个性特征</h4>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap items-center gap-2 mb-3">
+            <h4 className="font-semibold text-text-primary mr-auto">品牌个性特征</h4>
             {["颠覆的", "果断的", "务实的", "前沿的", "可信赖的", "有温度的"].map((trait) => (
               <span key={trait} className="px-3 py-1.5 text-sm font-medium bg-[#FFCB00]/10 text-[#000E1A] rounded-full border border-[#FFCB00]/20">
                 {trait}
               </span>
             ))}
           </div>
-          <p className="mt-3 text-sm text-text-secondary leading-relaxed">
-            <span className="font-anton">NoDesk AI</span> 的品牌个性融合了「敢于掀桌子」的颠覆基因与 AI 技术的理性务实，在专业可靠与活力创新之间取得平衡。
+          <p className="text-sm text-text-secondary leading-relaxed">
+            <span className="font-anton">NoDesk AI</span> 的品牌个性融合了「敢于掀桌子」的颠覆基因与 AI 技术的理性务实，在专业可靠与活力创新之间取得平衡。可点击<a href="/portfolio/team-culture-2026-4" className="text-text-primary underline underline-offset-2 hover:text-[#FFCB00] transition-colors">公司团队文化</a>了解。
           </p>
         </div>
       </motion.section>
@@ -182,10 +180,10 @@ export default function BrandPage() {
           AI&quot;英文标识为核心视觉资产，品牌在传播场景应优先使用英文标识。
         </p>
 
-        {/* A1.1 标识使用规范 */}
+        {/* A1.3 英文标准标识 */}
         <div className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A1.1 标识使用规范
+            A1.3 英文标准标识
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
             <div className="flex flex-col items-center justify-center p-8 rounded-2xl border border-border-light bg-white">
@@ -219,100 +217,59 @@ export default function BrandPage() {
           </div>
         </div>
 
-        {/* A1.2 标识应用频率 */}
+        {/* A1.3.1 标识应用频率 */}
         <div className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-6">
-            A1.2 标识应用频率
+            标识应用频率
           </h3>
 
           <div className="p-6 rounded-2xl border border-border-light bg-white mb-6">
             <p className="text-xs text-text-tertiary mb-3 font-medium">2. 标识应用频率</p>
             {/* Proportion bar */}
-            <div className="flex h-7 rounded-md overflow-hidden mb-6">
-              <div className="bg-[#FFCB00] flex items-center justify-center" style={{ width: "50%" }}>
-                <span className="text-[10px] font-bold text-[#000E1A]">50%</span>
-              </div>
-              <div className="bg-[#000E1A] flex items-center justify-center" style={{ width: "25%" }}>
-                <span className="text-[10px] font-bold text-[#FFCB00]">25%</span>
-              </div>
-              <div className="bg-[#000E1A]/80 flex items-center justify-center" style={{ width: "15%" }}>
-                <span className="text-[10px] font-bold text-white">15%</span>
-              </div>
-              <div className="bg-[#000E1A]/50 flex items-center justify-center" style={{ width: "5%" }}>
-                <span className="text-[8px] font-bold text-white">5%</span>
-              </div>
-              <div className="bg-[#000E1A]/30 flex items-center justify-center" style={{ width: "3%" }}>
-              </div>
-              <div className="bg-[#000E1A]/15 flex items-center justify-center" style={{ width: "2%" }}>
-              </div>
+            <div className="mb-6">
+              <img src="/brand/proportion-bar.svg" alt="标识应用频率" className="w-full rounded-full" />
             </div>
 
-            {/* Logo variants visual */}
-            <div className="grid grid-cols-6 gap-3">
+            {/* Logo variants visual - widths match proportion bar above */}
+            <div className="flex items-center">
               {/* 50% - 浅色标识 */}
-              <div className="flex flex-col items-center">
-                <div className="w-full aspect-square rounded-xl bg-[#FFCB00] flex flex-col items-center justify-center p-2">
-                  <svg viewBox="0 0 40 28" className="w-8 h-6 mb-1">
-                    <circle cx="14" cy="10" r="6" fill="none" stroke="#000E1A" strokeWidth="2"/>
-                    <circle cx="26" cy="10" r="4" fill="none" stroke="#000E1A" strokeWidth="2"/>
-                    <path d="M10 20 Q14 26 18 20" fill="none" stroke="#000E1A" strokeWidth="2" strokeLinecap="round"/>
-                    <path d="M22 18 Q26 22 30 18" fill="none" stroke="#000E1A" strokeWidth="2" strokeLinecap="round"/>
-                  </svg>
-                  <span className="text-[7px] font-anton text-[#000E1A] leading-none">NoDesk AI</span>
+              <div className="flex flex-col items-center px-1" style={{ width: "50%" }}>
+                <div className="aspect-square rounded-2xl bg-[#FFCB00] flex items-center justify-center overflow-hidden w-full max-w-[180px]">
+                  <img src="/brand/logo-light.svg" alt="浅色标识" className="w-full h-full object-contain" />
                 </div>
-                <span className="text-[10px] text-text-tertiary mt-1.5 text-center">浅色标识</span>
+                <span className="text-[10px] text-text-tertiary mt-1.5 text-center">浅色标识 50%</span>
               </div>
 
-              {/* 25% - 深色标识 */}
-              <div className="flex flex-col items-center">
-                <div className="w-full aspect-square rounded-xl bg-white border border-border-light flex flex-col items-center justify-center p-2">
-                  <svg viewBox="0 0 40 28" className="w-8 h-6 mb-1">
-                    <circle cx="14" cy="10" r="6" fill="none" stroke="#000E1A" strokeWidth="2"/>
-                    <circle cx="26" cy="10" r="4" fill="none" stroke="#000E1A" strokeWidth="2"/>
-                    <path d="M10 20 Q14 26 18 20" fill="none" stroke="#000E1A" strokeWidth="2" strokeLinecap="round"/>
-                    <path d="M22 18 Q26 22 30 18" fill="none" stroke="#000E1A" strokeWidth="2" strokeLinecap="round"/>
-                  </svg>
-                  <span className="text-[7px] font-anton text-[#000E1A] leading-none">NoDesk AI</span>
+              {/* 25% - 标准标识 */}
+              <div className="flex flex-col items-center px-1" style={{ width: "25%" }}>
+                <div className="aspect-square rounded-2xl bg-white border border-border-light flex items-center justify-center overflow-hidden w-full max-w-[130px]">
+                  <img src="/brand/logo-standard.svg" alt="标准标识" className="w-full h-full object-contain" />
                 </div>
-                <span className="text-[10px] text-text-tertiary mt-1.5 text-center">标准标识</span>
+                <span className="text-[10px] text-text-tertiary mt-1.5 text-center">标准标识 25%</span>
               </div>
 
               {/* 15% - 暗色标识 */}
-              <div className="flex flex-col items-center">
-                <div className="w-full aspect-square rounded-xl bg-[#000E1A] flex flex-col items-center justify-center p-2">
-                  <svg viewBox="0 0 40 28" className="w-8 h-6 mb-1">
-                    <circle cx="14" cy="10" r="6" fill="none" stroke="#FFCB00" strokeWidth="2"/>
-                    <circle cx="26" cy="10" r="4" fill="none" stroke="#FFCB00" strokeWidth="2"/>
-                    <path d="M10 20 Q14 26 18 20" fill="none" stroke="#FFCB00" strokeWidth="2" strokeLinecap="round"/>
-                    <path d="M22 18 Q26 22 30 18" fill="none" stroke="#FFCB00" strokeWidth="2" strokeLinecap="round"/>
-                  </svg>
-                  <span className="text-[7px] font-anton text-[#FFCB00] leading-none">NoDesk AI</span>
+              <div className="flex flex-col items-center px-1" style={{ width: "15%" }}>
+                <div className="aspect-square rounded-2xl bg-[#000E1A] flex items-center justify-center overflow-hidden w-full max-w-[100px]">
+                  <img src="/brand/logo-dark.svg" alt="暗色标识" className="w-full h-full object-contain" />
                 </div>
-                <span className="text-[10px] text-text-tertiary mt-1.5 text-center">暗色标识</span>
+                <span className="text-[10px] text-text-tertiary mt-1.5 text-center">暗色标识 15%</span>
               </div>
 
-              {/* 5% - 纯文字 */}
-              <div className="flex flex-col items-center">
-                <div className="w-full aspect-square rounded-xl bg-white border border-border-light flex items-center justify-center">
-                  <span className="text-[11px] font-anton text-[#000E1A]">NoDesk AI</span>
-                </div>
-                <span className="text-[10px] text-text-tertiary mt-1.5 text-center">纯文字</span>
-              </div>
-
-              {/* 3% - 墨稿 */}
-              <div className="flex flex-col items-center">
-                <div className="w-full aspect-square rounded-xl bg-white border border-border-light flex items-center justify-center">
-                  <span className="text-[11px] font-anton text-black/40">NoDesk AI</span>
-                </div>
-                <span className="text-[10px] text-text-tertiary mt-1.5 text-center">墨稿</span>
-              </div>
-
-              {/* 2% - 反白 */}
-              <div className="flex flex-col items-center">
-                <div className="w-full aspect-square rounded-xl bg-black flex items-center justify-center">
-                  <span className="text-[11px] font-anton text-white/50">NoDesk AI</span>
-                </div>
-                <span className="text-[10px] text-text-tertiary mt-1.5 text-center">反白稿</span>
+              {/* 5% + 3% + 2% */}
+              <div className="flex flex-col items-end gap-6 ml-auto">
+                {[
+                  { src: "/brand/logo-text.svg", alt: "纯文字", label: "纯文字 5%" },
+                  { src: "/brand/logo-ink.svg", alt: "墨稿", label: "图标加文字 3%" },
+                  { src: "/brand/logo-reverse.svg", alt: "反白稿", label: "图标加文字* 2%" },
+                ].map((item) => (
+                  <div key={item.alt} className="flex flex-col items-center">
+                    <div className="rounded-lg bg-white border border-border-light overflow-hidden" style={{ width: "120px" }}>
+                      <img src={item.src} alt={item.alt} className="w-full h-auto" />
+                    </div>
+                    <span className="text-[10px] text-text-tertiary mt-1.5 text-center">{item.label}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -320,85 +277,71 @@ export default function BrandPage() {
           <div className="p-6 rounded-2xl border border-border-light bg-white">
             <p className="text-xs text-text-tertiary mb-3 font-medium">3. 图标及应用频率</p>
             {/* Icon proportion bar */}
-            <div className="flex h-7 rounded-md overflow-hidden mb-6">
-              <div className="bg-[#FFCB00] flex items-center justify-center" style={{ width: "80%" }}>
-                <span className="text-[10px] font-bold text-[#000E1A]">80%</span>
+            <div className="flex h-7 rounded-full overflow-hidden mb-6 bg-[#FFCB00]/20">
+              <div className="bg-[#FFCB00]/30 flex items-center justify-center border-r-2 border-[#FFCB00]" style={{ width: "80%" }}>
+                <span className="text-[10px] font-medium text-[#000E1A]">80%</span>
               </div>
-              <div className="bg-[#000E1A]/30 flex items-center justify-center" style={{ width: "10%" }}>
-                <span className="text-[10px] font-bold text-[#000E1A]">10%</span>
+              <div className="bg-[#FFCB00]/30 flex items-center justify-center border-r-2 border-[#FFCB00]" style={{ width: "10%" }}>
+                <span className="text-[10px] font-medium text-[#000E1A]">10%</span>
               </div>
-              <div className="bg-[#000E1A] flex items-center justify-center" style={{ width: "10%" }}>
-                <span className="text-[10px] font-bold text-white">10%</span>
+              <div className="bg-[#FFCB00]/30 flex items-center justify-center" style={{ width: "10%" }}>
+                <span className="text-[10px] font-medium text-[#000E1A]">10%</span>
               </div>
             </div>
 
-            {/* Icon variants visual */}
-            <div className="grid grid-cols-3 gap-4">
-              <div className="flex flex-col items-center">
-                <div className="w-20 h-20 rounded-2xl bg-[#FFCB00] flex items-center justify-center">
-                  <svg viewBox="0 0 40 40" className="w-10 h-10">
-                    <circle cx="14" cy="14" r="6" fill="none" stroke="#000E1A" strokeWidth="2.5"/>
-                    <circle cx="28" cy="14" r="4" fill="none" stroke="#000E1A" strokeWidth="2.5"/>
-                    <path d="M8 28 Q14 36 20 28" fill="none" stroke="#000E1A" strokeWidth="2.5" strokeLinecap="round"/>
-                    <path d="M22 26 Q28 32 34 26" fill="none" stroke="#000E1A" strokeWidth="2.5" strokeLinecap="round"/>
-                  </svg>
+            {/* Icon variants visual - aligned with proportion bar */}
+            <div className="flex items-end">
+              {/* 80% - 品牌图标 */}
+              <div className="flex flex-col items-center px-1" style={{ width: "80%" }}>
+                <div className="w-20 h-20 rounded-2xl overflow-hidden">
+                  <img src="/brand/icon-brand.svg" alt="品牌图标" className="w-full h-full object-contain" />
                 </div>
-                <span className="text-xs text-text-secondary mt-2">品牌图标</span>
+                <span className="text-[10px] text-text-tertiary mt-1.5 text-center">主图标 80%</span>
               </div>
-              <div className="flex flex-col items-center">
-                <div className="w-20 h-20 rounded-2xl bg-white border border-border-light flex items-center justify-center">
-                  <svg viewBox="0 0 40 40" className="w-10 h-10">
-                    <circle cx="14" cy="14" r="6" fill="none" stroke="#000E1A" strokeWidth="2"/>
-                    <circle cx="28" cy="14" r="4" fill="none" stroke="#000E1A" strokeWidth="2"/>
-                    <path d="M8 28 Q14 36 20 28" fill="none" stroke="#000E1A" strokeWidth="2" strokeLinecap="round"/>
-                    <path d="M22 26 Q28 32 34 26" fill="none" stroke="#000E1A" strokeWidth="2" strokeLinecap="round"/>
-                  </svg>
+
+              {/* 10% - 线框图标 */}
+              <div className="flex flex-col items-center px-1" style={{ width: "10%" }}>
+                <div className="w-14 h-14 rounded-2xl bg-white border border-border-light flex items-center justify-center overflow-hidden p-2">
+                  <img src="/brand/icon-outline.svg" alt="线框图标" className="w-full h-full object-contain" />
                 </div>
-                <span className="text-xs text-text-secondary mt-2">线框图标</span>
+                <span className="text-[10px] text-text-tertiary mt-1.5 text-center">线框图标 10%</span>
               </div>
-              <div className="flex flex-col items-center">
-                <div className="w-20 h-20 rounded-2xl bg-[#000E1A] flex items-center justify-center">
-                  <svg viewBox="0 0 40 40" className="w-10 h-10">
-                    <circle cx="14" cy="14" r="6" fill="none" stroke="#FFCB00" strokeWidth="2.5"/>
-                    <circle cx="28" cy="14" r="4" fill="none" stroke="#FFCB00" strokeWidth="2.5"/>
-                    <path d="M8 28 Q14 36 20 28" fill="none" stroke="#FFCB00" strokeWidth="2.5" strokeLinecap="round"/>
-                    <path d="M22 26 Q28 32 34 26" fill="none" stroke="#FFCB00" strokeWidth="2.5" strokeLinecap="round"/>
-                  </svg>
+
+              {/* 10% - 暗色图标 */}
+              <div className="flex flex-col items-center px-1" style={{ width: "10%" }}>
+                <div className="w-14 h-14 rounded-2xl overflow-hidden">
+                  <img src="/brand/icon-dark.svg" alt="暗色图标" className="w-full h-full object-contain" />
                 </div>
-                <span className="text-xs text-text-secondary mt-2">暗色图标</span>
+                <span className="text-[10px] text-text-tertiary mt-1.5 text-center">暗色图标 10%</span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* A1.3 墨稿与反白稿 */}
+        {/* A1.4 墨稿与反白稿 */}
         <div className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A1.3 墨稿与反白稿
+            A1.4 墨稿与反白稿
           </h3>
           <p className="text-sm text-text-secondary mb-4">
             在品牌传播中受条件制约不能使用标识彩色稿时，使用墨稿与反白稿来保证标识统一准确传播。
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="flex flex-col items-center justify-center p-10 rounded-2xl border border-border-light bg-white">
-              <span className="text-xl text-black tracking-tight font-anton">
-                NoDesk AI
-              </span>
-              <span className="text-xs text-text-tertiary mt-3">墨稿</span>
+            <div className="flex flex-col items-center justify-center rounded-2xl border border-border-light bg-white overflow-hidden">
+              <img src="/brand/logo-ink-full.svg" alt="墨稿" className="w-full h-auto" />
+              <span className="text-xs text-text-tertiary pb-4">墨稿</span>
             </div>
-            <div className="flex flex-col items-center justify-center p-10 rounded-2xl bg-black">
-              <span className="text-xl text-white tracking-tight font-anton">
-                NoDesk AI
-              </span>
-              <span className="text-xs text-white/50 mt-3">反白稿</span>
+            <div className="flex flex-col items-center justify-center rounded-2xl bg-black overflow-hidden">
+              <img src="/brand/logo-reverse-full.svg" alt="反白稿" className="w-full h-auto" />
+              <span className="text-xs text-white/50 pb-4">反白稿</span>
             </div>
           </div>
         </div>
 
-        {/* A1.4 标识最小尺寸规范 */}
+        {/* A1.5 标识最小尺寸规范 */}
         <div className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A1.4 标识最小尺寸规范
+            A1.5 标识最小尺寸规范
           </h3>
           <p className="text-sm text-text-secondary mb-4">
             为保证品牌在对外传播过程中达到更好的效果，设定标识最小显示及印刷尺寸。
@@ -437,10 +380,10 @@ export default function BrandPage() {
           </div>
         </div>
 
-        {/* A1.5 标识最小保护空间 */}
+        {/* A1.6 标识最小保护空间 */}
         <div className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A1.5 标识最小保护空间
+            A1.6 标识最小保护空间
           </h3>
           <div className="p-5 rounded-xl bg-surface-alt">
             <p className="text-sm text-text-secondary leading-relaxed">
@@ -459,10 +402,10 @@ export default function BrandPage() {
           </div>
         </div>
 
-        {/* A1.6 标识在社交媒体中的使用 */}
+        {/* A1.7 标识在社交媒体中的使用 */}
         <div className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A1.6 标识在社交媒体中的使用
+            A1.7 标识在社交媒体中的使用
           </h3>
           <p className="text-sm text-text-secondary mb-4">
             品牌标识在社交媒体的使用中，为保证企业形象的准确传播，在实际制作和使用时应严格遵循。
@@ -490,10 +433,10 @@ export default function BrandPage() {
           </div>
         </div>
 
-        {/* A1.7 标识在背景上的使用 */}
+        {/* A1.8 标识在背景上的使用 */}
         <div>
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A1.7 标识在背景上的使用
+            A1.8 标识在背景上的使用
           </h3>
           <p className="text-sm text-text-secondary mb-4">
             标识在背景上应清晰可见并规范使用品牌标准色彩。
@@ -527,7 +470,7 @@ export default function BrandPage() {
         </div>
       </motion.section>
 
-      {/* A1.8 标识错误使用示例 */}
+      {/* A1.9 标识错误使用示例 */}
       <motion.section
         id="a1-8"
         initial={{ opacity: 0, y: 20 }}
@@ -536,7 +479,7 @@ export default function BrandPage() {
         className="mb-16"
       >
         <h3 className="text-lg font-semibold text-text-primary mb-4">
-          A1.8 标识错误使用示例
+          A1.9 标识错误使用示例
         </h3>
         <p className="text-sm text-text-secondary mb-4">
           以下为品牌标识的禁止做法，任何场景下均不得出现以下变形或误用。
@@ -593,74 +536,64 @@ export default function BrandPage() {
             A2.1 品牌标准色彩
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="overflow-hidden rounded-2xl border border-border-light bg-white">
-              <div
-                className="h-28 w-full flex items-end p-4"
-                style={{ backgroundColor: "#FFCB00" }}
-              >
-                <span className="text-sm font-bold text-[#000E1A]">
-                  应用占比 80%
-                </span>
-              </div>
+            <div className="overflow-hidden rounded-2xl border border-border-light flex flex-col justify-end" style={{ backgroundColor: "#FFCB00", minHeight: "282px" }}>
               <div className="p-4 space-y-2">
-                <h4 className="font-bold text-text-primary">掀桌闪电黄</h4>
-                <p className="text-xs text-text-tertiary leading-relaxed">
+                <div className="flex items-center gap-2">
+                  <h4 className="font-bold text-[#000E1A]">掀桌闪电黄</h4>
+                  <span className="text-sm font-bold text-[#000E1A]">应用占比 80%</span>
+                </div>
+                <p className="text-xs text-[#000E1A]/60 leading-relaxed">
                   致敬「敢于掀桌子」的颠覆精神，闪电象征决策速度
                 </p>
-                <div className="space-y-1 text-xs font-mono text-text-secondary">
+                <div className="space-y-1 text-xs font-mono text-[#000E1A]/70">
                   <p>
-                    Hex: <span className="text-text-primary">#FFCB00</span>
+                    Hex: <span className="text-[#000E1A]">#FFCB00</span>
                   </p>
                   <p>
                     RGB:{" "}
-                    <span className="text-text-primary">
+                    <span className="text-[#000E1A]">
                       rgba(255, 203, 0, 100%)
                     </span>
                   </p>
                   <p>
                     CMYK:{" "}
-                    <span className="text-text-primary">
+                    <span className="text-[#000E1A]">
                       C4.02 M25.84 Y88.84 K0
                     </span>
                   </p>
                   <p>
-                    PANTONE: <span className="text-text-primary">7548U</span>
+                    PANTONE: <span className="text-[#000E1A]">7548U</span>
                   </p>
                 </div>
               </div>
             </div>
-            <div className="overflow-hidden rounded-2xl border border-border-light bg-white">
-              <div
-                className="h-28 w-full flex items-end p-4"
-                style={{ backgroundColor: "#000E1A" }}
-              >
-                <span className="text-sm font-bold text-[#FFCB00]">
-                  应用占比 20%
-                </span>
-              </div>
+            <div className="overflow-hidden rounded-2xl border border-[#000E1A] flex flex-col justify-end" style={{ backgroundColor: "#000E1A", minHeight: "282px" }}>
               <div className="p-4 space-y-2">
-                <h4 className="font-bold text-text-primary">零点暗质蓝</h4>
-                <p className="text-xs text-text-tertiary leading-relaxed">
+                <div className="flex items-center gap-2">
+                  <h4 className="font-bold text-white">零点暗质蓝</h4>
+                  <span className="text-sm font-bold text-[#FFCB00]">应用占比 20%</span>
+                </div>
+                <p className="text-xs text-white/50 leading-relaxed">
                   融合「0day全球化」概念，暗物质象征AI的不可见生产力
                 </p>
-                <div className="space-y-1 text-xs font-mono text-text-secondary">
+                <div className="space-y-1 text-xs font-mono text-white/60">
                   <p>
-                    Hex: <span className="text-text-primary">#000E1A</span>
+                    Hex: <span className="text-white">#000E1A</span>
                   </p>
                   <p>
                     RGB:{" "}
-                    <span className="text-text-primary">
+                    <span className="text-white">
                       rgba(0, 14, 26, 100%)
                     </span>
                   </p>
                   <p>
                     CMYK:{" "}
-                    <span className="text-text-primary">
+                    <span className="text-white">
                       C97.81 M90.37 Y74.83 K67.58
                     </span>
                   </p>
                   <p>
-                    PANTONE: <span className="text-text-primary">532C</span>
+                    PANTONE: <span className="text-white">532C</span>
                   </p>
                 </div>
               </div>
@@ -1323,7 +1256,7 @@ export default function BrandPage() {
         <div className="p-5 rounded-xl bg-surface-alt">
           <h4 className="font-semibold text-text-primary mb-2">版本管理</h4>
           <div className="space-y-1.5 text-sm text-text-secondary">
-            <p>• 当前版本：<span className="font-mono font-medium text-text-primary">Version 0.8</span>（2025 年 8 月）</p>
+            <p>• 当前版本：<span className="font-mono font-medium text-text-primary">Version 1.0</span>（2026 年 4 月）</p>
             <p>• 品牌规范由设计团队统一维护，更新周期为季度</p>
             <p>• 重大变更需经品牌委员会审批，并在更新日志中记录</p>
             <p>• 所有品牌资产通过统一的品牌资源库分发，禁止使用过期版本</p>

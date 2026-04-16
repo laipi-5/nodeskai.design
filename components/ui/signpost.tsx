@@ -64,7 +64,7 @@ const signs: SignItem[] = [
 ];
 
 const POLE_HEIGHT = 400;
-const SIGN_W = 200;
+const SIGN_W = 165;
 const SIGN_H = 54;
 const SIGN_SPACING = 58;
 const POLE_COLOR_FRONT =
@@ -148,9 +148,10 @@ function SignVisual({
           <div className={`flex items-center h-full pl-2 transition-transform duration-150 origin-left ${isDragActive ? "scale-105" : ""}`}>
             <div className="relative">
               <svg
-                width="190"
+                width="155"
                 height="46"
                 viewBox="0 0 190 46"
+                preserveAspectRatio="none"
                 className="drop-shadow-sm"
               >
                 <path
@@ -196,7 +197,7 @@ function SignVisual({
         >
           <div className="flex items-center justify-end h-full pr-2">
             <div className="relative">
-              <svg width="190" height="46" viewBox="0 0 190 46">
+              <svg width="155" height="46" viewBox="0 0 190 46" preserveAspectRatio="none">
                 <path
                   d="M190 5C190 2.24 187.76 0 185 0H28L4 23L28 46H185C187.76 46 190 43.76 190 41V5Z"
                   fill={isDragActive ? "#FFCB00" : sign.bg}
