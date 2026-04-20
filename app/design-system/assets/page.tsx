@@ -46,14 +46,14 @@ export default function AssetsPage() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`relative flex-1 flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium rounded-lg transition-colors ${
+              className={`relative flex-1 flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium rounded-xl transition-colors ${
                 active ? "text-text-primary" : "text-text-tertiary hover:text-text-secondary"
               }`}
             >
               {active && (
                 <motion.div
                   layoutId="assets-tab"
-                  className="absolute inset-0 bg-surface rounded-lg shadow-sm"
+                  className="absolute inset-0 bg-surface rounded-xl shadow-sm"
                   transition={{ type: "spring", bounce: 0.15, duration: 0.4 }}
                 />
               )}

@@ -106,8 +106,8 @@ export function CardPreview() {
   return (
     <PreviewWrapper title="Card 卡片">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="rounded-xl border border-border-light p-5 hover:shadow-md transition-shadow">
-          <div className="h-24 rounded-lg bg-surface-alt mb-4" />
+        <div className="rounded-2xl border border-border-light p-5 hover:shadow-md transition-shadow">
+          <div className="h-24 rounded-xl bg-surface-alt mb-4" />
           <h5 className="font-semibold text-text-primary text-sm">
             卡片标题
           </h5>
@@ -115,8 +115,8 @@ export function CardPreview() {
             这是卡片的描述文本，简洁明了。
           </p>
         </div>
-        <div className="rounded-xl border border-border-light p-5 hover:shadow-md transition-shadow">
-          <div className="h-24 rounded-lg bg-surface-alt mb-4" />
+        <div className="rounded-2xl border border-border-light p-5 hover:shadow-md transition-shadow">
+          <div className="h-24 rounded-xl bg-surface-alt mb-4" />
           <h5 className="font-semibold text-text-primary text-sm">
             卡片标题
           </h5>

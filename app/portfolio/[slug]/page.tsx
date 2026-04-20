@@ -163,7 +163,7 @@ export default function ProjectDetailPage() {
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: i * 0.1 }}
-                  className="p-5 rounded-xl bg-surface-alt border border-border-light text-center"
+                  className="p-5 rounded-2xl bg-surface-alt border border-border-light text-center"
                 >
                   <p className="text-sm font-medium text-text-primary">
                     {result}

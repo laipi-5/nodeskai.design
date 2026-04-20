@@ -163,7 +163,7 @@ export default function GuidelinesPage() {
             <motion.div
               key={a.title}
               variants={item}
-              className="p-5 rounded-xl border border-border-light bg-white"
+              className="p-5 rounded-2xl border border-border-light bg-white"
             >
               <h4 className="font-semibold text-text-primary">{a.title}</h4>
               <p className="mt-1 text-sm text-text-secondary">{a.description}</p>
@@ -188,7 +188,7 @@ export default function GuidelinesPage() {
             return (
               <div
                 key={bp.name}
-                className="p-5 rounded-xl border border-border-light bg-white text-center"
+                className="p-5 rounded-2xl border border-border-light bg-white text-center"
               >
                 <Icon size={24} className="mx-auto text-text-primary mb-3" />
                 <h4 className="font-semibold text-text-primary text-sm">

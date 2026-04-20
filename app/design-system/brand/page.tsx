@@ -102,17 +102,14 @@ export default function BrandPage() {
       <div className="mb-12">
         <div className="flex items-center gap-3">
           <h1 className="text-4xl font-bold text-text-primary">品牌设计规范</h1>
-          <span className="px-2.5 py-1 text-xs font-medium bg-surface-alt text-text-secondary rounded-lg">
+          <span className="px-2.5 py-1 text-xs font-medium bg-surface-alt text-text-secondary rounded-xl">
             Version 1.0
           </span>
           <span className="text-xs text-text-tertiary">2026.4</span>
         </div>
         <p className="mt-3 text-base text-text-secondary leading-relaxed">
           本规范手册呈现品牌所有的关键视觉元素，系统地阐述如何在多种不同应用形式下准确、统一地运用品牌标识、品牌色等视觉元素，以保持"NoDesk
-          AI"的品牌视觉识别统一性。
-        </p>
-        <p className="mt-2 text-base text-text-secondary leading-relaxed">
-          在遵循品牌统一性且不违背品牌视觉识别的基础上，使用者应尝试灵活运用其中的基本规则，从而衍生出更具创新性、个性化以及多元化的表达形式。
+          AI"的品牌视觉识别统一性。在遵循品牌统一性且不违背品牌视觉识别的基础上，使用者应尝试灵活运用其中的基本规则，从而衍生出更具创新性、个性化以及多元化的表达形式。
         </p>
       </div>
 
@@ -124,7 +121,7 @@ export default function BrandPage() {
         className="mb-16"
       >
         <h2 className="text-2xl font-bold text-text-primary mb-2">
-          A0 · 品牌理念与定位
+          A 0 · 品牌理念与定位
         </h2>
         <p className="text-sm text-text-secondary mb-8">
           品牌核心理念是所有视觉与传播行为的根基。
@@ -150,17 +147,17 @@ export default function BrandPage() {
           })}
         </div>
 
-        <div className="p-5 rounded-xl bg-surface-alt">
+        <div className="p-5 rounded-2xl bg-surface-alt">
           <div className="flex flex-wrap items-center gap-2 mb-3">
             <h4 className="font-semibold text-text-primary mr-auto">品牌个性特征</h4>
-            {["颠覆的", "果断的", "务实的", "前沿的", "可信赖的", "有温度的"].map((trait) => (
+            {["颠覆的", "果断的", "务实的", "前沿的", "可信赖的", "有温度的", "活人感"].map((trait) => (
               <span key={trait} className="px-3 py-1.5 text-sm font-medium bg-[#FFCB00]/10 text-[#000E1A] rounded-full border border-[#FFCB00]/20">
                 {trait}
               </span>
             ))}
           </div>
           <p className="text-sm text-text-secondary leading-relaxed">
-            <span className="font-anton">NoDesk AI</span> 的品牌个性融合了「敢于掀桌子」的颠覆基因与 AI 技术的理性务实，在专业可靠与活力创新之间取得平衡。可点击<a href="/portfolio/team-culture-2026-4" className="text-text-primary underline underline-offset-2 hover:text-[#FFCB00] transition-colors">公司团队文化</a>了解。
+            <span className="font-anton">NoDesk AI</span> 融合了「敢于掀桌子」的颠覆基因与 AI 技术的理性务实，在专业可靠与活力创新之间取得平衡。可点击<a href="/portfolio/team-culture-2026-4" className="text-text-secondary underline underline-offset-2 hover:text-[#000E1A] transition-colors">公司团队文化</a>了解。
           </p>
         </div>
       </motion.section>
@@ -173,17 +170,17 @@ export default function BrandPage() {
         className="mb-16"
       >
         <h2 className="text-2xl font-bold text-text-primary mb-2">
-          A1 · 标识 LOGO
+          A 1 · 标识 LOGO
         </h2>
         <p className="text-sm text-text-secondary mb-8">
           &quot;NoDesk
           AI&quot;英文标识为核心视觉资产，品牌在传播场景应优先使用英文标识。
         </p>
 
-        {/* A1.3 英文标准标识 */}
-        <div className="mb-10">
+        {/* A1.1 标识使用规范 */}
+        <div id="a1-1" className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A1.3 英文标准标识
+            A 1.1 标识使用规范
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
             <div className="flex flex-col items-center justify-center p-8 rounded-2xl border border-border-light bg-white">
@@ -202,11 +199,11 @@ export default function BrandPage() {
               <span className="text-xl text-[#FFCB00] tracking-tight mb-3 font-anton">
                 NoDesk AI
               </span>
-              <span className="text-xs text-[#FFCB00]/60">深色模式</span>
+              <span className="text-xs text-white/60">深色模式</span>
             </div>
           </div>
 
-          <div className="p-5 rounded-xl bg-surface-alt">
+          <div className="p-5 rounded-2xl bg-surface-alt">
             <p className="text-sm text-text-secondary leading-relaxed">
               浅色/深色模式主要应用于公司网站标识、线上/线下海报、周边物料、机场广告等场景，
               <span className="font-medium text-text-primary">
@@ -217,17 +214,33 @@ export default function BrandPage() {
           </div>
         </div>
 
-        {/* A1.3.1 标识应用频率 */}
+        {/* 标识应用频率 */}
         <div className="mb-10">
-          <h3 className="text-lg font-semibold text-text-primary mb-6">
+          <h4 className="text-base font-semibold text-text-primary mb-6">
             标识应用频率
-          </h3>
+          </h4>
 
-          <div className="p-6 rounded-2xl border border-border-light bg-white mb-6">
-            <p className="text-xs text-text-tertiary mb-3 font-medium">2. 标识应用频率</p>
+          <div className="mb-6">
             {/* Proportion bar */}
-            <div className="mb-6">
-              <img src="/brand/proportion-bar.svg" alt="标识应用频率" className="w-full rounded-full" />
+            <div className="flex h-7 rounded-full overflow-hidden mb-6 bg-[#FFCB00]/20">
+              <div className="bg-[#FFCB00]/30 flex items-center justify-center border-r-2 border-[#FFCB00]" style={{ width: "50%" }}>
+                <span className="text-[10px] font-medium text-[#000E1A]">50%</span>
+              </div>
+              <div className="bg-[#FFCB00]/30 flex items-center justify-center border-r-2 border-[#FFCB00]" style={{ width: "25%" }}>
+                <span className="text-[10px] font-medium text-[#000E1A]">25%</span>
+              </div>
+              <div className="bg-[#FFCB00]/30 flex items-center justify-center border-r-2 border-[#FFCB00]" style={{ width: "15%" }}>
+                <span className="text-[10px] font-medium text-[#000E1A]">15%</span>
+              </div>
+              <div className="bg-[#FFCB00]/30 flex items-center justify-center border-r-2 border-[#FFCB00]" style={{ width: "5%" }}>
+                <span className="text-[10px] font-medium text-[#000E1A]">5%</span>
+              </div>
+              <div className="bg-[#FFCB00]/30 flex items-center justify-center border-r-2 border-[#FFCB00]" style={{ width: "3%" }}>
+                <span className="text-[10px] font-medium text-[#000E1A]">3%</span>
+              </div>
+              <div className="bg-[#FFCB00]/30 flex items-center justify-center" style={{ width: "2%" }}>
+                <span className="text-[10px] font-medium text-[#000E1A]">2%</span>
+              </div>
             </div>
 
             {/* Logo variants visual - widths match proportion bar above */}
@@ -274,8 +287,10 @@ export default function BrandPage() {
             </div>
           </div>
 
-          <div className="p-6 rounded-2xl border border-border-light bg-white">
-            <p className="text-xs text-text-tertiary mb-3 font-medium">3. 图标及应用频率</p>
+          <h4 className="text-base font-semibold text-text-primary mb-6 mt-14">
+            图标应用频率
+          </h4>
+          <div>
             {/* Icon proportion bar */}
             <div className="flex h-7 rounded-full overflow-hidden mb-6 bg-[#FFCB00]/20">
               <div className="bg-[#FFCB00]/30 flex items-center justify-center border-r-2 border-[#FFCB00]" style={{ width: "80%" }}>
@@ -290,17 +305,17 @@ export default function BrandPage() {
             </div>
 
             {/* Icon variants visual - aligned with proportion bar */}
-            <div className="flex items-end">
+            <div className="flex items-center">
               {/* 80% - 品牌图标 */}
-              <div className="flex flex-col items-center px-1" style={{ width: "80%" }}>
-                <div className="w-20 h-20 rounded-2xl overflow-hidden">
+              <div className="flex flex-col items-center justify-center px-1" style={{ width: "80%" }}>
+                <div className="aspect-square rounded-2xl overflow-hidden w-full max-w-[180px]">
                   <img src="/brand/icon-brand.svg" alt="品牌图标" className="w-full h-full object-contain" />
                 </div>
                 <span className="text-[10px] text-text-tertiary mt-1.5 text-center">主图标 80%</span>
               </div>
 
               {/* 10% - 线框图标 */}
-              <div className="flex flex-col items-center px-1" style={{ width: "10%" }}>
+              <div className="flex flex-col items-center justify-center px-1" style={{ width: "10%" }}>
                 <div className="w-14 h-14 rounded-2xl bg-white border border-border-light flex items-center justify-center overflow-hidden p-2">
                   <img src="/brand/icon-outline.svg" alt="线框图标" className="w-full h-full object-contain" />
                 </div>
@@ -308,7 +323,7 @@ export default function BrandPage() {
               </div>
 
               {/* 10% - 暗色图标 */}
-              <div className="flex flex-col items-center px-1" style={{ width: "10%" }}>
+              <div className="flex flex-col items-center justify-center px-1" style={{ width: "10%" }}>
                 <div className="w-14 h-14 rounded-2xl overflow-hidden">
                   <img src="/brand/icon-dark.svg" alt="暗色图标" className="w-full h-full object-contain" />
                 </div>
@@ -318,30 +333,45 @@ export default function BrandPage() {
           </div>
         </div>
 
-        {/* A1.4 墨稿与反白稿 */}
-        <div className="mb-10">
+        {/* A1.2 英文标准标识 */}
+        <div id="a1-2" className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A1.4 墨稿与反白稿
+            A 1.2 英文标准标识
+          </h3>
+          <p className="text-sm text-text-secondary mb-6">
+            英文标识的标准制图规范，阐述标识的科学绘制方法，以此来规范标识的造型比例、结构、空间距离等相互关系。在制作各种相关项目过程中必须遵循，以求标识的精准比例及视觉形象的统一。
+          </p>
+          <img src="/brand/logo-standard-spec.svg" alt="英文标准标识制图规范" className="w-full h-auto max-w-lg mx-auto" />
+        </div>
+
+        {/* A1.3 墨稿与反白稿 */}
+        <div id="a1-3" className="mb-10">
+          <h3 className="text-lg font-semibold text-text-primary mb-4">
+            A 1.3 墨稿与反白稿
           </h3>
           <p className="text-sm text-text-secondary mb-4">
             在品牌传播中受条件制约不能使用标识彩色稿时，使用墨稿与反白稿来保证标识统一准确传播。
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="flex flex-col items-center justify-center rounded-2xl border border-border-light bg-white overflow-hidden">
-              <img src="/brand/logo-ink-full.svg" alt="墨稿" className="w-full h-auto" />
-              <span className="text-xs text-text-tertiary pb-4">墨稿</span>
+            <div className="flex flex-col items-center">
+              <div className="aspect-square w-full rounded-2xl border border-border-light bg-white overflow-hidden flex items-center justify-center">
+                <img src="/brand/logo-ink-full.svg" alt="墨稿" className="w-full h-full object-contain" />
+              </div>
+              <span className="text-xs text-text-tertiary mt-2">墨稿</span>
             </div>
-            <div className="flex flex-col items-center justify-center rounded-2xl bg-black overflow-hidden">
-              <img src="/brand/logo-reverse-full.svg" alt="反白稿" className="w-full h-auto" />
-              <span className="text-xs text-white/50 pb-4">反白稿</span>
+            <div className="flex flex-col items-center">
+              <div className="aspect-square w-full rounded-2xl bg-black overflow-hidden flex items-center justify-center">
+                <img src="/brand/logo-reverse-full.svg" alt="反白稿" className="w-full h-full object-contain" />
+              </div>
+              <span className="text-xs text-text-tertiary mt-2">反白稿</span>
             </div>
           </div>
         </div>
 
-        {/* A1.5 标识最小尺寸规范 */}
-        <div className="mb-10">
+        {/* A1.4 标识最小尺寸规范 */}
+        <div id="a1-4" className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A1.5 标识最小尺寸规范
+            A 1.4 标识最小尺寸规范
           </h3>
           <p className="text-sm text-text-secondary mb-4">
             为保证品牌在对外传播过程中达到更好的效果，设定标识最小显示及印刷尺寸。
@@ -380,12 +410,12 @@ export default function BrandPage() {
           </div>
         </div>
 
-        {/* A1.6 标识最小保护空间 */}
-        <div className="mb-10">
+        {/* A1.5 标识最小保护空间 */}
+        <div id="a1-5" className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A1.6 标识最小保护空间
+            A 1.5 标识最小保护空间
           </h3>
-          <div className="p-5 rounded-xl bg-surface-alt">
+          <div className="p-5 rounded-2xl bg-surface-alt">
             <p className="text-sm text-text-secondary leading-relaxed">
               标识四周的不可侵犯区域内不得出现文字及图像，保证品牌识别性。保护空间为标识高度的
               <span className="font-mono font-medium text-text-primary">
@@ -402,10 +432,10 @@ export default function BrandPage() {
           </div>
         </div>
 
-        {/* A1.7 标识在社交媒体中的使用 */}
-        <div className="mb-10">
+        {/* A1.6 标识在社交媒体中的使用 */}
+        <div id="a1-6" className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A1.7 标识在社交媒体中的使用
+            A 1.6 标识在社交媒体中的使用
           </h3>
           <p className="text-sm text-text-secondary mb-4">
             品牌标识在社交媒体的使用中，为保证企业形象的准确传播，在实际制作和使用时应严格遵循。
@@ -433,10 +463,10 @@ export default function BrandPage() {
           </div>
         </div>
 
-        {/* A1.8 标识在背景上的使用 */}
-        <div>
+        {/* A1.7 标识在背景上的使用 */}
+        <div id="a1-7">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A1.8 标识在背景上的使用
+            A 1.7 标识在背景上的使用
           </h3>
           <p className="text-sm text-text-secondary mb-4">
             标识在背景上应清晰可见并规范使用品牌标准色彩。
@@ -448,7 +478,7 @@ export default function BrandPage() {
                 className="flex items-center gap-4 p-4 rounded-xl border border-border-light bg-white"
               >
                 <div
-                  className="shrink-0 h-10 w-10 rounded-lg"
+                  className="shrink-0 h-10 w-10 rounded-xl"
                   style={{ background: item.bg }}
                 />
                 <div className="flex-1 min-w-0">
@@ -470,7 +500,7 @@ export default function BrandPage() {
         </div>
       </motion.section>
 
-      {/* A1.9 标识错误使用示例 */}
+      {/* A1.8 标识错误使用示例 */}
       <motion.section
         id="a1-8"
         initial={{ opacity: 0, y: 20 }}
@@ -479,7 +509,7 @@ export default function BrandPage() {
         className="mb-16"
       >
         <h3 className="text-lg font-semibold text-text-primary mb-4">
-          A1.9 标识错误使用示例
+          A 1.8 标识错误使用示例
         </h3>
         <p className="text-sm text-text-secondary mb-4">
           以下为品牌标识的禁止做法，任何场景下均不得出现以下变形或误用。
@@ -499,7 +529,7 @@ export default function BrandPage() {
             return (
               <div
                 key={item.label}
-                className="p-4 rounded-xl border border-red-100 bg-red-50/50"
+                className="p-4 rounded-2xl border border-red-100 bg-red-50/50"
               >
                 <div className="flex items-center gap-2 mb-2">
                   <Ban size={14} className="text-red-400" />
@@ -524,7 +554,7 @@ export default function BrandPage() {
         className="mb-16"
       >
         <h2 className="text-2xl font-bold text-text-primary mb-2">
-          A2 · 色彩
+          A 2 · 色彩
         </h2>
         <p className="text-sm text-text-secondary mb-8">
           品牌标准色运用在所有视觉传达设计的媒体上，通过色彩特有的知觉刺激与心理反应，表达企业的经营理念和精神。
@@ -533,7 +563,7 @@ export default function BrandPage() {
         {/* A2.1 品牌标准色彩 */}
         <div className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A2.1 品牌标准色彩
+            A 2.1 品牌标准色彩
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="overflow-hidden rounded-2xl border border-border-light flex flex-col justify-end" style={{ backgroundColor: "#FFCB00", minHeight: "282px" }}>
@@ -542,28 +572,14 @@ export default function BrandPage() {
                   <h4 className="font-bold text-[#000E1A]">掀桌闪电黄</h4>
                   <span className="text-sm font-bold text-[#000E1A]">应用占比 80%</span>
                 </div>
-                <p className="text-xs text-[#000E1A]/60 leading-relaxed">
+                <p className="text-xs text-[#000E1A] leading-relaxed">
                   致敬「敢于掀桌子」的颠覆精神，闪电象征决策速度
                 </p>
-                <div className="space-y-1 text-xs font-mono text-[#000E1A]/70">
-                  <p>
-                    Hex: <span className="text-[#000E1A]">#FFCB00</span>
-                  </p>
-                  <p>
-                    RGB:{" "}
-                    <span className="text-[#000E1A]">
-                      rgba(255, 203, 0, 100%)
-                    </span>
-                  </p>
-                  <p>
-                    CMYK:{" "}
-                    <span className="text-[#000E1A]">
-                      C4.02 M25.84 Y88.84 K0
-                    </span>
-                  </p>
-                  <p>
-                    PANTONE: <span className="text-[#000E1A]">7548U</span>
-                  </p>
+                <div className="space-y-1 text-xs font-mono text-[#000E1A]">
+                  <p>Hex: #FFCB00</p>
+                  <p>RGB: rgba(255, 203, 0, 100%)</p>
+                  <p>CMYK: C4.02 M25.84 Y88.84 K0</p>
+                  <p>PANTONE: 7548U</p>
                 </div>
               </div>
             </div>
@@ -571,30 +587,16 @@ export default function BrandPage() {
               <div className="p-4 space-y-2">
                 <div className="flex items-center gap-2">
                   <h4 className="font-bold text-white">零点暗质蓝</h4>
-                  <span className="text-sm font-bold text-[#FFCB00]">应用占比 20%</span>
+                  <span className="text-sm font-bold text-white">应用占比 20%</span>
                 </div>
-                <p className="text-xs text-white/50 leading-relaxed">
+                <p className="text-xs text-white leading-relaxed">
                   融合「0day全球化」概念，暗物质象征AI的不可见生产力
                 </p>
-                <div className="space-y-1 text-xs font-mono text-white/60">
-                  <p>
-                    Hex: <span className="text-white">#000E1A</span>
-                  </p>
-                  <p>
-                    RGB:{" "}
-                    <span className="text-white">
-                      rgba(0, 14, 26, 100%)
-                    </span>
-                  </p>
-                  <p>
-                    CMYK:{" "}
-                    <span className="text-white">
-                      C97.81 M90.37 Y74.83 K67.58
-                    </span>
-                  </p>
-                  <p>
-                    PANTONE: <span className="text-white">532C</span>
-                  </p>
+                <div className="space-y-1 text-xs font-mono text-white">
+                  <p>Hex: #000E1A</p>
+                  <p>RGB: rgba(0, 14, 26, 100%)</p>
+                  <p>CMYK: C97.81 M90.37 Y74.83 K67.58</p>
+                  <p>PANTONE: 532C</p>
                 </div>
               </div>
             </div>
@@ -604,7 +606,7 @@ export default function BrandPage() {
         {/* A2.2 品牌辅助色（不透明度变体） */}
         <div className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A2.2 品牌辅助色（不透明度变体）
+            A 2.2 品牌辅助色（不透明度变体）
           </h3>
           <p className="text-sm text-text-secondary mb-4">
             辅助品牌标准色塑造独特的品牌形象，通过不同不透明度创造丰富的层次。
@@ -618,7 +620,7 @@ export default function BrandPage() {
         {/* A2.3 次级辅助色彩 */}
         <div className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A2.3 次级辅助色彩
+            A 2.3 次级辅助色彩
           </h3>
           <p className="text-sm text-text-secondary mb-4">
             次级辅助色彩为辅助品牌标准色塑造独特的品牌形象而确定的色彩系统。
@@ -635,11 +637,11 @@ export default function BrandPage() {
         {/* A2.4 色彩搭配与无障碍规则 */}
         <div>
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A2.4 色彩搭配与无障碍规则
+            A 2.4 色彩搭配与无障碍规则
           </h3>
 
           <div className="space-y-6">
-            <div className="p-5 rounded-xl bg-surface-alt">
+            <div className="p-5 rounded-2xl bg-surface-alt">
               <h4 className="font-semibold text-text-primary mb-3">推荐搭配</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
@@ -650,10 +652,10 @@ export default function BrandPage() {
                 ].map((combo) => (
                   <div
                     key={combo.label}
-                    className="flex items-center gap-3 p-3 rounded-lg border border-border-light bg-white"
+                    className="flex items-center gap-3 p-3 rounded-xl border border-border-light bg-white"
                   >
                     <div
-                      className="shrink-0 w-10 h-10 rounded-lg flex items-center justify-center text-xs font-bold"
+                      className="shrink-0 w-10 h-10 rounded-xl flex items-center justify-center text-xs font-bold"
                       style={{ color: combo.fg, backgroundColor: combo.bg, border: combo.bg === "#FFFFFF" ? "1px solid #E5E7EB" : "none" }}
                     >
                       Aa
@@ -667,7 +669,7 @@ export default function BrandPage() {
               </div>
             </div>
 
-            <div className="p-5 rounded-xl border border-red-100 bg-red-50/30">
+            <div className="p-5 rounded-2xl border border-red-100 bg-red-50/30">
               <h4 className="font-semibold text-text-primary mb-3">禁止搭配</h4>
               <ul className="space-y-1.5 text-sm text-text-secondary">
                 <li className="flex items-center gap-2"><X size={14} className="text-red-400 shrink-0" /> 掀桌闪电黄上不得使用白色文字（对比度仅 1.3:1）</li>
@@ -676,7 +678,7 @@ export default function BrandPage() {
               </ul>
             </div>
 
-            <div className="p-5 rounded-xl bg-surface-alt">
+            <div className="p-5 rounded-2xl bg-surface-alt">
               <h4 className="font-semibold text-text-primary mb-3">渐变规范</h4>
               <p className="text-sm text-text-secondary mb-3">
                 品牌允许在特定场景中使用渐变，须遵循以下规则：
@@ -689,7 +691,7 @@ export default function BrandPage() {
               </ul>
             </div>
 
-            <div className="p-5 rounded-xl bg-surface-alt">
+            <div className="p-5 rounded-2xl bg-surface-alt">
               <h4 className="font-semibold text-text-primary mb-3">无障碍性要求</h4>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
@@ -732,7 +734,7 @@ export default function BrandPage() {
         transition={{ delay: 0.2 }}
       >
         <h2 className="text-2xl font-bold text-text-primary mb-2">
-          A3 · 字体
+          A 3 · 字体
         </h2>
         <p className="text-sm text-text-secondary mb-8">
           品牌字体规范确保文字内容的一致性和易读性。
@@ -741,7 +743,7 @@ export default function BrandPage() {
         {/* A3.1 中西字体 */}
         <div className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A3.1 中西字体
+            A 3.1 中西字体
           </h3>
           <div className="space-y-4">
             <div className="p-6 rounded-2xl border border-border-light bg-white">
@@ -811,7 +813,7 @@ export default function BrandPage() {
         {/* A3.2 字体使用场景规范 */}
         <div>
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A3.2 字体使用场景规范
+            A 3.2 字体使用场景规范
           </h3>
           <p className="text-sm text-text-secondary mb-4">
             在书面表达过程中，文字编辑要遵循以下规范标准，以保证文字内容的易读性。
@@ -866,7 +868,7 @@ export default function BrandPage() {
         className="mb-16"
       >
         <h2 className="text-2xl font-bold text-text-primary mb-2">
-          A4 · 图形元素与图标风格
+          A 4 · 图形元素与图标风格
         </h2>
         <p className="text-sm text-text-secondary mb-8">
           品牌辅助图形和图标系统构建统一的视觉语言。
@@ -874,7 +876,7 @@ export default function BrandPage() {
 
         <div className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A4.1 图标绘制规范
+            A 4.1 图标绘制规范
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="p-5 rounded-2xl border border-border-light bg-white">
@@ -903,9 +905,9 @@ export default function BrandPage() {
 
         <div className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A4.2 品牌辅助图形
+            A 4.2 品牌辅助图形
           </h3>
-          <div className="p-5 rounded-xl bg-surface-alt">
+          <div className="p-5 rounded-2xl bg-surface-alt">
             <p className="text-sm text-text-secondary leading-relaxed mb-3">
               品牌辅助图形从「闪电」与「掀桌」的核心隐喻中提取，用于增强品牌识别。
             </p>
@@ -919,9 +921,9 @@ export default function BrandPage() {
 
         <div>
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A4.3 插图风格
+            A 4.3 插图风格
           </h3>
-          <div className="p-5 rounded-xl bg-surface-alt">
+          <div className="p-5 rounded-2xl bg-surface-alt">
             <ul className="space-y-1.5 text-sm text-text-secondary">
               <li>• 采用扁平化几何风格或像素风格，线条简洁利落</li>
               <li>• 色彩范围限定为品牌标准色与辅助色</li>
@@ -941,7 +943,7 @@ export default function BrandPage() {
         className="mb-16"
       >
         <h2 className="text-2xl font-bold text-text-primary mb-2">
-          A5 · 摄影与图片风格
+          A 5 · 摄影与图片风格
         </h2>
         <p className="text-sm text-text-secondary mb-8">
           品牌摄影风格指南，确保图片素材传达一致的品牌调性。
@@ -968,7 +970,7 @@ export default function BrandPage() {
           })}
         </div>
 
-        <div className="p-5 rounded-xl bg-surface-alt">
+        <div className="p-5 rounded-2xl bg-surface-alt">
           <h4 className="font-semibold text-text-primary mb-2">图片处理规范</h4>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
             <div><span className="text-text-tertiary block text-xs">裁切比例</span><span className="text-text-primary font-mono">16:9 / 4:3 / 1:1</span></div>
@@ -988,7 +990,7 @@ export default function BrandPage() {
         className="mb-16"
       >
         <h2 className="text-2xl font-bold text-text-primary mb-2">
-          A6 · 语言与文案规范
+          A 6 · 语言与文案规范
         </h2>
         <p className="text-sm text-text-secondary mb-8">
           品牌语调和文案规范确保对外传播的一致性和专业性。
@@ -996,7 +998,7 @@ export default function BrandPage() {
 
         <div className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A6.1 品牌语调
+            A 6.1 品牌语调
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {[
@@ -1015,9 +1017,9 @@ export default function BrandPage() {
 
         <div className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A6.2 中英文混排规则
+            A 6.2 中英文混排规则
           </h3>
-          <div className="p-5 rounded-xl bg-surface-alt space-y-2 text-sm text-text-secondary">
+          <div className="p-5 rounded-2xl bg-surface-alt space-y-2 text-sm text-text-secondary">
             <p>• 中文与英文/数字之间须加一个半角空格：<span className="text-text-primary"><span className="font-anton">NoDesk AI</span> 是一家</span></p>
             <p>• 品牌名「<span className="font-anton">NoDesk AI</span>」始终使用英文原名，首字母大写</p>
             <p>• 中文标点使用全角，英文内容使用半角标点</p>
@@ -1028,7 +1030,7 @@ export default function BrandPage() {
 
         <div>
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A6.3 产品命名与术语
+            A 6.3 产品命名与术语
           </h3>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
@@ -1067,7 +1069,7 @@ export default function BrandPage() {
         className="mb-16"
       >
         <h2 className="text-2xl font-bold text-text-primary mb-2">
-          A7 · 动效规范
+          A 7 · 动效规范
         </h2>
         <p className="text-sm text-text-secondary mb-8">
           品牌动效语言定义动画的节奏和调性，与品牌「快速决策」的精神一致。
@@ -1075,7 +1077,7 @@ export default function BrandPage() {
 
         <div className="mb-10">
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A7.1 动效参数
+            A 7.1 动效参数
           </h3>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
@@ -1108,9 +1110,9 @@ export default function BrandPage() {
 
         <div>
           <h3 className="text-lg font-semibold text-text-primary mb-4">
-            A7.2 Logo 动画规范
+            A 7.2 Logo 动画规范
           </h3>
-          <div className="p-5 rounded-xl bg-surface-alt space-y-1.5 text-sm text-text-secondary">
+          <div className="p-5 rounded-2xl bg-surface-alt space-y-1.5 text-sm text-text-secondary">
             <p>• Logo 入场动画时长不超过 1.2 秒，含缓入缓出</p>
             <p>• 加载状态可使用 Logo 图标的脉冲动画（opacity 0.3↔1.0）</p>
             <p>• 禁止为 Logo 添加弹跳、抖动等夸张动效</p>
@@ -1167,9 +1169,9 @@ export default function BrandPage() {
           })}
         </div>
 
-        <div className="mt-6 p-5 rounded-xl bg-[#FFCB00]/10 border border-[#FFCB00]/20">
+        <div className="mt-6 p-5 rounded-2xl bg-[#FFCB00]/10 border border-[#FFCB00]/20">
           <p className="text-sm text-text-secondary">
-            <span className="font-medium text-text-primary">注意：</span>B 应用部分的详细设计模板正在制作中，各物料的标准文件将在后续版本中补充。制作物料时请严格遵循 A1-A3 中的标识、色彩和字体规范。
+            <span className="font-medium text-text-primary">注意：</span>B 应用部分的详细设计模板正在制作中，各物料的标准文件将在后续版本中补充。制作物料时请严格遵循 A 1-A 3 中的标识、色彩和字体规范。
           </p>
         </div>
       </motion.section>
@@ -1191,10 +1193,7 @@ export default function BrandPage() {
 
         <div className="space-y-4">
           <div className="p-5 rounded-2xl border border-border-light bg-white">
-            <div className="flex items-center gap-2 mb-3">
-              <Handshake size={18} className="text-text-secondary" />
-              <h4 className="font-semibold text-text-primary">Logo 并列规则</h4>
-            </div>
+            <h4 className="font-semibold text-text-primary mb-3">Logo 并列规则</h4>
             <ul className="space-y-1.5 text-sm text-text-secondary">
               <li>• <span className="font-anton">NoDesk AI</span> Logo 与合作方 Logo 等高显示，间距不小于单个 Logo 宽度的 50%</li>
               <li>• 双方 Logo 之间以竖线「|」或「×」分隔</li>
@@ -1202,7 +1201,7 @@ export default function BrandPage() {
               <li>• 作为协办/赞助方时 Logo 置于右侧/下方</li>
             </ul>
           </div>
-          <div className="p-5 rounded-xl bg-surface-alt">
+          <div className="p-5 rounded-2xl bg-surface-alt">
             <h4 className="font-semibold text-text-primary mb-2">赞助场景</h4>
             <ul className="space-y-1.5 text-sm text-text-secondary">
               <li>• 赞助活动中 Logo 最小显示尺寸不低于 100px</li>
@@ -1247,18 +1246,18 @@ export default function BrandPage() {
             </div>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between"><span className="text-text-secondary">Roboto</span><span className="text-text-primary">Apache 2.0（免费）</span></div>
-              <div className="flex justify-between"><span className="text-text-secondary">D-DIN-PRO</span><span className="text-text-primary">商业授权（已购买）</span></div>
+              <div className="flex justify-between"><span className="text-text-secondary">D-DIN-PRO</span><span className="text-text-primary">SIL OFL（免费）</span></div>
               <div className="flex justify-between"><span className="text-text-secondary">思源黑体</span><span className="text-text-primary">SIL OFL（免费）</span></div>
             </div>
           </div>
         </div>
 
-        <div className="p-5 rounded-xl bg-surface-alt">
+        <div className="p-5 rounded-2xl bg-surface-alt">
           <h4 className="font-semibold text-text-primary mb-2">版本管理</h4>
           <div className="space-y-1.5 text-sm text-text-secondary">
             <p>• 当前版本：<span className="font-mono font-medium text-text-primary">Version 1.0</span>（2026 年 4 月）</p>
             <p>• 品牌规范由设计团队统一维护，更新周期为季度</p>
-            <p>• 重大变更需经品牌委员会审批，并在更新日志中记录</p>
+            <p>• 重大变更需经班委审批，并在更新日志中记录</p>
             <p>• 所有品牌资产通过统一的品牌资源库分发，禁止使用过期版本</p>
           </div>
         </div>
